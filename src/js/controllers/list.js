@@ -21,7 +21,7 @@ function List ($scope, $http, $state){
     if(info === 2){ $state.go('contacts');}
   };
 
-  $scope.testclick = function (info) {
+  $scope.testclick = function () {
     //$state.go(`contacts`)
     console.log("hello")
   };

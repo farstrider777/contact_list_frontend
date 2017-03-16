@@ -4,11 +4,11 @@ const SERVER_URL = 'https://arcane-mountain-37553.herokuapp.com';
 
 function Individual ($scope, $http, $state){
   console.log('hello')
-  console.log(contact.id)
 
-  $scope.testclick = function (info) {
+
+  $scope.testclick = function () {
     //$state.go(`contacts`)
-    console.log("hello")
+    console.log("hello2")
   };
 
   //console.log($scope);a
