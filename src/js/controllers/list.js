@@ -1,6 +1,6 @@
 const SERVER_URL = 'https://arcane-mountain-37553.herokuapp.com';
 
-var info = 0;
+var info = 1;
 
 function List ($scope, $http, $state){
 //  $scope.currentContact = null;

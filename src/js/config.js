@@ -18,6 +18,9 @@ function Config ($stateProvider, $urlRouterProvider) {
        controller: 'Add'
      })
 
+     $urlRouterProvider.when('', '/home');
+     $urlRouterProvider.otherwise('/home');
+
 }
 
 Config.$inject = ['$stateProvider', '$urlRouterProvider'];

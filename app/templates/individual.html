@@ -1,12 +1,12 @@
 
 
 <div>
-  <div class="top-bar">This contact</div>
+  <div class="top-bar"><img class="align-left pic" src="{{contact.photo_url}}"></div>
+  <div class="align-left">{{contact.name}}</div>
+  <div class="align-left">{{contact.email}}</div>
+  <div class="align-left">{{contact.phone_number}}</div>
+  <div class="align-left">{{contact.city}},{{contact.state}}</div>
 
-
-    <div ng-click="testclick()" class="name-list">
-      test me
-    </div>
-    <a href="http://localhost:8081/#!/home">no test me</a>
+  <a href="http://localhost:8081/#!/home">Back to main list</a>
 
 </div>
