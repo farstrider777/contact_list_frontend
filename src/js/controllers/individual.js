@@ -10,9 +10,10 @@ function Individual ($scope, $http, $state){
   function init () {
     $http.get(`${SERVER_URL}/contacts/${info}`).then(resp => {
       $scope.contact = resp.data;
-      //console.log($scope.contacts)
+      console.log(info)
+      console.log($scope.contact)
     });
-    console.log($scope.contact)
+    //console.log($scope.contact)
   }
 
   $scope.testclick = function () {
