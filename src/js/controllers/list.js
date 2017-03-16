@@ -17,6 +17,8 @@ function List ($scope, $http, $state){
   $scope.listclick = function (info) {
     //console.log(info)
     //console.log(info)
+    $scope.clickedContact = info;
+    console.log($scope.clickedContact)
     if(info === 1){  $state.go('home');}
     if(info === 2){ $state.go('contacts');}
   };

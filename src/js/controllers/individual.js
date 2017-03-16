@@ -4,6 +4,7 @@ const SERVER_URL = 'https://arcane-mountain-37553.herokuapp.com';
 
 function Individual ($scope, $http, $state){
   console.log('hello')
+  console.log($scope.clickedContact)
 
 
   $scope.testclick = function () {
