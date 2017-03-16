@@ -1,16 +1,26 @@
-
+import { info } from './list';
 const SERVER_URL = 'https://arcane-mountain-37553.herokuapp.com';
 
 
 function Individual ($scope, $http, $state){
   console.log('hello')
   console.log($scope.clickedContact)
+  console.log(info)
 
+  function init () {
+    $http.get(`${SERVER_URL}/contacts/${info}`).then(resp => {
+      $scope.contact = resp.data;
+      //console.log($scope.contacts)
+    });
+    console.log($scope.contact)
+  }
 
   $scope.testclick = function () {
     //$state.go(`contacts`)
     console.log("hello2")
   };
+
+
 
   //console.log($scope);a
   //

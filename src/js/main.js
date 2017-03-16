@@ -1,7 +1,7 @@
 import angular from 'angular';
 import 'angular-ui-router';
 
-import List from './controllers/list';
+import { List } from './controllers/list';
 import Individual from './controllers/individual';
 import Add from './controllers/add';
 

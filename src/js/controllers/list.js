@@ -1,5 +1,6 @@
 const SERVER_URL = 'https://arcane-mountain-37553.herokuapp.com';
 
+var info = 0;
 
 function List ($scope, $http, $state){
 //  $scope.currentContact = null;
@@ -14,13 +15,14 @@ function List ($scope, $http, $state){
 
   init();
 
-  $scope.listclick = function (info) {
+  $scope.listclick = function (id) {
     //console.log(info)
     //console.log(info)
-    $scope.clickedContact = info;
+    info = id;
+    $scope.clickedContact = id;
     console.log($scope.clickedContact)
-    if(info === 1){  $state.go('home');}
-    if(info === 2){ $state.go('contacts');}
+    if(id === 1){  $state.go('home');}
+    if(id === 2){ $state.go('contacts');}
   };
 
   $scope.testclick = function () {
@@ -32,4 +34,4 @@ function List ($scope, $http, $state){
 
 List.$inject = ['$scope', '$http', '$state'];
 
-export default List;
+export  { List, info };
