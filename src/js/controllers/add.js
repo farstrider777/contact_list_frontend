@@ -14,6 +14,13 @@ function Add ($scope, $http, $state){
 // //       $scope.contacts = resp.data;
 //   };
 
+  $scope.addContact = function (data) {
+     var url = `${SERVER_URL}/contacts`;
+     $http.post(url, data).then(resp => {
+       $state.go('home');
+     });
+   };
+
 
 
 }
