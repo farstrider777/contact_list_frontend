@@ -13,7 +13,7 @@ function Config ($stateProvider, $urlRouterProvider) {
        controller: 'Individual'
      })
      .state('add', {
-       url: 'add',
+       url: '/add',
        templateUrl: 'templates/add.html',
        controller: 'Add'
      })
