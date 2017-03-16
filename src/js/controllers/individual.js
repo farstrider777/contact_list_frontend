@@ -7,19 +7,9 @@ function Individual ($scope, $http, $state){
   function init () {
     $http.get(`${SERVER_URL}/contacts/${info}`).then(resp => {
       $scope.contact = resp.data;
-      console.log(info)
-      console.log(resp.data)
     });
   }
-
-init();
-
-  $scope.testclick = function () {
-    //$state.go(`contacts`)
-    console.log("hello2")
-  };
-
-
+  init();
 }
 
 Individual.$inject = ['$scope', '$http', '$state'];

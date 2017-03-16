@@ -1,6 +1,4 @@
 function Config ($stateProvider, $urlRouterProvider) {
-  console.log($stateProvider);
-  console.log($urlRouterProvider);
 
   $stateProvider
      .state('home', {
@@ -16,10 +14,10 @@ function Config ($stateProvider, $urlRouterProvider) {
        url: '/add',
        templateUrl: 'templates/add.html',
        controller: 'Add'
-     })
+     });
 
-     $urlRouterProvider.when('', '/home');
-     $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.when('', '/home');
+  $urlRouterProvider.otherwise('/home');
 
 }
 

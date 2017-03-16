@@ -12,5 +12,5 @@ angular
   .config(Config)
   .controller('List', List)
   .controller('Individual', Individual)
-  .controller('Add', Add)
+  .controller('Add', Add);
   // .controller('GreetController', GreetController)
