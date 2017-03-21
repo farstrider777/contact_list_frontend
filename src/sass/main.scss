@@ -4,8 +4,16 @@
 //   font-size: 62.5%
 // }
 
-.inline{
+.inline {
   display: inline-block;
+}
+
+.pad{
+  padding-left: 6px;
+}
+
+.line {
+  border-bottom: 1px solid gray;
 }
 
 .container {
