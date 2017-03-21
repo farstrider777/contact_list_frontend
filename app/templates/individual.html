@@ -2,11 +2,23 @@
 
 <div>
   <div class="top-bar"><img class="align-left pic" src="{{contact.photo_url}}"></div>
-  <div class="align-left">{{contact.name}}</div>
-  <div class="align-left">{{contact.email}}</div>
-  <div class="align-left">{{contact.phone_number}}</div>
-  <div class="align-left">{{contact.city}},{{contact.state}}</div>
 
+  <div class="align-left">
+    <i class="fa fa-user inline" aria-hidden="true"></i>
+    <div class="inline">{{contact.name}}</div>
+  </div>
+  <div class="align-left">
+    <i class="fa fa-envelope inline" aria-hidden="true"></i>
+    <div class="align-left inline">{{contact.email}}</div>
+  </div>
+  <div class="align-left">
+    <i class="fa fa-mobile inline" aria-hidden="true"></i>
+    <div class="align-left inline">{{contact.phone_number}}</div>
+  </div>
+  <div class="align-left">
+    <i class="fa fa-globe inline" aria-hidden="true"></i>
+    <div class="align-left inline">{{contact.city}},{{contact.state}}</div>
+  </div>
   <a href="#!/home">Back to main list</a>
 
 </div>
