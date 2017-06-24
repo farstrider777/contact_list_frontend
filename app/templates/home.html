@@ -2,7 +2,7 @@
 
   <div class="main-list" ng-repeat="contact in contacts">
     <div class="photo-list">
-      <img ng-click="listclick(contact.id)" class="photo-list" ng-src="{{ contact.photo_url }}" alt="Image"/>
+      <img ng-click="listclick(contact.id)" class="photo-list" ng-src="{{ contact.phone_number }}" alt="Image"/>
     </div>
     <div ng-click="listclick(contact.id)" class="name-list">
       {{ contact.name }}
